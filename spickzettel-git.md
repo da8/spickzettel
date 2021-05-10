@@ -8,4 +8,4 @@ git cycle
 * git pull
 
 git rename file
-* git mv <old-filename> <new-filename>
+* git mv <old_filename> <new_filename>
