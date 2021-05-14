@@ -20,3 +20,12 @@
     * rm python3
     * ln -s python3.6 python3
 * now starting gnome-tweeks works
+
+# how to create zip file in pieces
+* create split zip files 
+    * zip -r -s 500m data.zip data/
+* unzip files
+    * merge split files
+        * zip -s 0 data.zip --out unsplit.zip
+    * unzip
+        * unzip unsplit.zip
