@@ -29,3 +29,12 @@
         * zip -s 0 data.zip --out unsplit.zip
     * unzip
         * unzip unsplit.zip
+# create and rund your first shell script (https://linuxhandbook.com/run-shell-script/)
+    mkdir scripts
+	cd scripts
+	touch hello.sh	
+	vim hello.sh
+	type in "echo 'Hello, World!'", save the file and exit vim
+	chmod u+x hello.sh
+	./hello.sh
+	Hello, World!
