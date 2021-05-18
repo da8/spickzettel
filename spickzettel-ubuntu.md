@@ -92,6 +92,5 @@
 			fdupes -r /home
 		* delete duplicates
 			fdupes -d /path/to/folder
-		
-		
-		
+# Ubuntu 18.04 not booting
+
