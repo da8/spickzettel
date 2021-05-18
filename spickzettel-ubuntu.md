@@ -93,4 +93,14 @@
 		* delete duplicates
 			fdupes -d /path/to/folder
 # Ubuntu 18.04 not booting
-
+	* to enter safe mode
+		* power off vm
+		* start vm with VirtualBox
+		* click into vm windows as soon as the vm starts and the VirualBox logo becomes visible
+		* keep left-shift-key pressed till the GNU GRUB menu appears
+		* Select Advanced options for Ubuntu
+		* Select recover mode
+		* Work with Recovery Menu
+	* clicking right-ctrl/strg-key releases the mouse from the guest
+		
+		
