@@ -19,7 +19,7 @@
 			* as the root user run the commands
 				* sudo su
 				* pvs
-					* check fot the right partition XXX 
+					* check for the right partition XXX 
 				* pvresize /dev/XXX
 				* lsblk
 					* Running lsblk shows that the root partition is still occupying only ZZZ whereas there’s YYY on the partition XXX. This is because our physical partition has grown but the logical volume manager is not aware of this.
