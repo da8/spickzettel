@@ -66,7 +66,7 @@
 	* check disk usage
 		du -h /var/lib/snapd/snaps
 	* create a bash script with the following code and run it
-'''
+´´´
 		#!/bin/bash
 		# Removes old revisions of snaps
 		# CLOSE ALL SNAPS BEFORE RUNNING THIS
@@ -75,7 +75,7 @@
 			while read snapname revision; do
 				snap remove "$snapname" --revision="$revision"
 			done
-'''
+´´´
 6. Clean the thumbnail cache [Intermediate knowledge]
 	* check disk usage
 		du -sh ~/.cache/thumbnails
