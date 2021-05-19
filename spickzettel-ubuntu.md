@@ -102,8 +102,7 @@
 		* Select recover mode
 		* Work with Recovery Menu
 	* clicking right-ctrl/strg-key releases the mouse from the guest
-
-# Set grub and the commandline of ubuntu server to the highest possible resolution or to a choosen resolution
+# Set the resolution of grub and the commandline on VirtualBox guest Ubuntu server to a choosen / the highest possible resolution 
 	* If the server is a guest on VirtualBox installing the Guest Additions will not help because there is no GUI to work on
     * Get and/the highest possible resolution in grub 
         * Boot vm 
@@ -125,4 +124,17 @@
         * save file
         * sudo update-grub
         * sudo reboot
-		
+# Install VirtualBox Guest Additions on guest Ubuntu Server
+        * Start the Ubuntu guest virtual machine.
+        * Login to the Ubuntu guest as a sudo user and install the packages required for building external kernel modules:
+            * sudo apt update
+            * sudo apt install build-essential dkms linux-headers-$(uname -r)
+        * sudo apt-get install virtualbox-guest-additions-iso
+        * sudo apt-get install virtualbox-guest-utils
+        * reboot
+# Update and Upgrade Ubuntu
+    * sudo apt update
+    * sudo apt list --upgradable
+    * sudo apt upgrade
+    * sudo apt autoremove
+    * sudo apt clean
