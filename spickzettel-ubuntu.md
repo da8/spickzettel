@@ -125,13 +125,13 @@
         * sudo update-grub
         * sudo reboot
 # Install VirtualBox Guest Additions on guest Ubuntu Server
-        * Start the Ubuntu guest virtual machine.
-        * Login to the Ubuntu guest as a sudo user and install the packages required for building external kernel modules:
-            * sudo apt update
-            * sudo apt install build-essential dkms linux-headers-$(uname -r)
-        * sudo apt-get install virtualbox-guest-additions-iso
-        * sudo apt-get install virtualbox-guest-utils
-        * reboot
+	* Start the Ubuntu guest virtual machine.
+	* Login to the Ubuntu guest as a sudo user and install the packages required for building external kernel modules:
+		* sudo apt update
+		* sudo apt install build-essential dkms linux-headers-$(uname -r)
+	* sudo apt-get install virtualbox-guest-additions-iso
+	* sudo apt-get install virtualbox-guest-utils
+	* reboot
 # Update and Upgrade Ubuntu
     * sudo apt update
     * sudo apt list --upgradable
