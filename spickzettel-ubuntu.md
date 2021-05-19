@@ -102,5 +102,27 @@
 		* Select recover mode
 		* Work with Recovery Menu
 	* clicking right-ctrl/strg-key releases the mouse from the guest
-		
+
+# Set grub and the commandline of ubuntu server to the highest possible resolution or to a choosen resolution
+	* If the server is a guest on VirtualBox installing the Guest Additions will not help because there is no GUI to work on
+    * Get and/the highest possible resolution in grub 
+        * Boot vm 
+        * Click into vm as soon VirtualBox logo appears
+        * Keep left-shit-key pressed to start grub menu
+        * Grub menu appears
+        * Press c to drop into grub console
+        * show all valid resolutions -> chosen 1152x864
+            * grub > vbeinfo 
+        * leave grub console and return to grup menu
+            * grub > normal + Enter
+    * Ubuntu – GRUB2: Use maximum detected resolution
+        * sudo cp /etc/default/grub /etc/default/grub.old
+        * sudo vim /etc/default/grub
+        * add/change the following lines where the line #GRUB_GFXMODE.... was
+            * GRUB_GFXMODE=1152x864 
+            * GRUB_CMDLINE_LINUX_DEFAULT="nomodeset"
+            * GRUB_GFXPAYLOAD_LINUX=keep    
+        * save file
+        * sudo update-grub
+        * sudo reboot
 		
